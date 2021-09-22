@@ -16,7 +16,7 @@ const connect = function () {
   })
 
   // specify a name
-  const name = "SJ1";
+  const name = "jJ9";
 
   //if connected successfully, console log a string and write the name
   conn.on('connect', (connect) => {
