@@ -15,11 +15,15 @@ const connect = function () {
     console.log(data);
   })
 
-  //if connected successfully, console log a string
-  conn.on('connect', (connect) => {
-    console.log("Connected successfully!");
-  })
+  // specify a name
+  const name = "SJ1";
 
+  //if connected successfully, console log a string and write the name
+  conn.on('connect', (connect) => {
+    console.log("Successfully connected to game server!");
+    conn.write(`Name: ${name}`);
+  })
+  // 
   return conn;
 };
 
